@@ -12,7 +12,7 @@
         android:paddingRight="@dimen/activity_horizontal_margin"
         android:paddingTop="@dimen/activity_vertical_margin"
         app:layout_behavior="@string/appbar_scrolling_view_behavior"
-        tools:context="com.example.ysapir.tasker.CreateEditTaskActivity"
+        tools:context="com.shenkar.ysapir.tasker.CreateEditTaskActivity"
         tools:showIn="@layout/app_bar_create_edit_task">
 
         <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -48,7 +48,8 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:gravity="center"
-                android:layout_marginBottom="10dp">
+                android:id="@+id/radio_group"
+                android:layout_marginBottom="20dp">
                     <RadioButton android:id="@+id/radio_normal"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -68,21 +69,12 @@
                         android:text="Low"
                         android:onClick="onRadioButtonClicked"/>
             </RadioGroup>
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                >
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Employee : "/>
-                <Spinner
+            <EditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="10dp"
-                    android:id="@+id/employeeSpinner" />
-            </LinearLayout>
+                    android:hint="Employee"
+                    android:id="@+id/employeeEditText"/>
 
             <EditText
                 android:layout_width="match_parent"
@@ -92,16 +84,10 @@
                 android:id="@+id/location"/>
 
             <Button
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Pick Date"
-                android:onClick="showDatePickerDialog" />
-
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Pick Time"
-                android:onClick="showTimePickerDialog" />
+                android:text="Scan Barcode"
+                android:onClick="openScanner" />
 
             <Button
                 android:layout_width="match_parent"

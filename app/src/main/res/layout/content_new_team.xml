@@ -9,7 +9,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.example.ysapir.tasker.NewTeamActivity"
+    tools:context="com.shenkar.ysapir.tasker.NewTeamActivity"
     tools:showIn="@layout/app_bar_new_team">
     <LinearLayout
         android:layout_width="match_parent"

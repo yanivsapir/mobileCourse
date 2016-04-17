@@ -1,4 +1,4 @@
-package com.example.ysapir.tasker;
+package com.shenkar.ysapir.tasker;
 
 import org.junit.Test;
 

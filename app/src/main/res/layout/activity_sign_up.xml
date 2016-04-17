@@ -8,7 +8,7 @@
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:orientation="vertical"
     android:gravity="center"
-    tools:context=".SignUpActivity">
+    tools:context="com.shenkar.ysapir.tasker.SignUpActivity">
 
     <EditText
         android:layout_width="match_parent"
@@ -34,11 +34,19 @@
         android:hint="Phone Number"
         android:inputType="number"
         android:id="@+id/phoneNum"/>
+    <CheckBox
+        android:id="@+id/chkbx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Manager" />
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
         android:id="@+id/loginBtn"
         android:background="@color/colorPrimaryDark"
         android:onClick="signUpUser"
         android:text="SIGN UP"/>
+
 </LinearLayout>
